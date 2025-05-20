@@ -1,88 +1,59 @@
-# ML Noise Impact Analysis
+# Выпускная квалификационная работа на тему: "Влияние шума в аннотациях на качество обучения моделей машинного обучения"
 
-A web application for analyzing the impact of noise in annotations on machine learning model training quality.
+Веб-приложение для исследования влияния шума в аннотациях на качество обучения моделей машинного обучения.
 
-## Features
+## Особенности
 
-- Upload or select datasets
-- Choose from various machine learning models
-- Configure different types and levels of noise
-- Train models with the specified configurations
-- Visualize and analyze training results
+- Загрузка или выбор датасетов
+- Выбор различных моделей машинного обучения
+- Настройка типа и уровня шума
+- Обучение моделей с заданными конфигурациями
+- Визуализация и анализ результатов обучения
 
-## Technologies
+## Стек технологий
 
-- **Streamlit**: For the user interface
-- **FastAPI**: For the backend API
-- **scikit-learn**: For machine learning models
-- **MLflow**: For experiment tracking
-- **Docker**: For containerization
+- **Streamlit**: Для пользовательского интерфейса
+- **FastAPI**: Для реализации API-сервера
+- **scikit-learn**: Для реализации моделей машинного обучения
+- **MLflow**: Для логирования экспериментов
+- **Docker**: Для контейнеризации
 
-## Project Structure
+## Структура Проекта
 
-The project follows a modular structure with clear separation of concerns:
+Проект следует модульной структуре с четким разделением обязанностей:
 
-- `frontend/`: Streamlit application
-- `backend/`: FastAPI application
-- `ml/`: Machine learning components
-- `services/`: Business logic services
-- `data/`: Data storage
+- `frontend/`: Приложение Streamlit
+- `backend/`: Приложение FastAPI
+- `ml/`: Компоненты машинного обучения
+- `services/`: Сервисы бизнес-логики
+- `data/`: Хранилище данных
 
-## Getting Started
+## Начало работы
 
-### Prerequisites
+### Предварительные требования
 
-- Docker and Docker Compose
+- Docker и Docker Compose
 - Python 3.9+
 
-### Installation
+### Установка
 
-1. Clone the repository:
-   \`\`\`bash
-   git clone https://github.com/yourusername/noise-impact-analysis.git
-   cd noise-impact-analysis
-   \`\`\`
+1. Клонируйте репозиторий:
+   ```
+   git clone https://github.com/MarchAleksey/Diploma.git
+   cd Diploma
+   ```
 
-2. Create a `.env` file from the example:
-   \`\`\`bash
+2. Создайте файл `.env` из примера:
+   ```
    cp .env.example .env
-   \`\`\`
+   ```
 
-3. Build and start the containers:
-   \`\`\`bash
+3. Соберите и запустите контейнеры:
+   ```
    docker-compose up -d
-   \`\`\`
+   ```
 
-4. Access the application:
+4. Доступ к приложению:
    - Frontend: http://localhost:8501
    - Backend API: http://localhost:8000
    - MLflow UI: http://localhost:5000
-
-## Usage
-
-1. Start by selecting or uploading a dataset
-2. Choose a machine learning model
-3. Configure the type and level of noise
-4. Train the model
-5. Analyze the results
-
-## Development
-
-### Running Locally
-
-1. Install dependencies:
-   \`\`\`bash
-   pip install -r requirements.txt
-   \`\`\`
-
-2. Run the frontend:
-   \`\`\`bash
-   cd frontend
-   streamlit run app.py
-   \`\`\`
-
-3. Run the backend:
-   \`\`\`bash
-   cd backend
-   uvicorn main:app --reload
-   \`\`\`
