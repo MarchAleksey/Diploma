@@ -1,7 +1,5 @@
 import os
 import requests
-import json
-import streamlit as st
 
 class APIClient:
     """Client for communicating with the FastAPI backend."""

@@ -1,7 +1,6 @@
 from abc import ABC, abstractmethod
-from typing import Dict, Any, Tuple, Optional
+from typing import Dict, Any, Tuple
 import numpy as np
-import pandas as pd
 from sklearn.base import BaseEstimator
 from sklearn.model_selection import train_test_split, cross_val_score
 

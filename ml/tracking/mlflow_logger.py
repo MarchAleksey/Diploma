@@ -2,7 +2,6 @@ import mlflow
 import numpy as np
 import matplotlib.pyplot as plt
 from typing import Dict, Any, Optional
-import os
 import io
 from sklearn.metrics import confusion_matrix, roc_curve, auc
 from sklearn.model_selection import learning_curve

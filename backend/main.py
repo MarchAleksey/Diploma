@@ -1,14 +1,8 @@
-from fastapi import FastAPI, HTTPException, Depends, File, UploadFile, Form
+from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
-from typing import List, Dict, Any, Optional
 import uvicorn
-import pandas as pd
-import numpy as np
 import os
 import sys
-import uuid
-import json
 import mlflow
 from datetime import datetime
 

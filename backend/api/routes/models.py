@@ -1,7 +1,4 @@
 from fastapi import APIRouter, HTTPException
-from typing import List, Dict, Any
-
-from core.config import settings
 from services.model_service import ModelService
 
 router = APIRouter()

@@ -1,5 +1,4 @@
 from typing import Dict, Any, Optional
-import numpy as np
 
 from ml.noise.label_noise import LabelNoise
 from ml.noise.feature_noise import GaussianNoise, MissingValues

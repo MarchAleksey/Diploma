@@ -3,9 +3,8 @@ import uuid
 import json
 import pandas as pd
 import numpy as np
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any
 from sklearn import datasets
-from sklearn.preprocessing import StandardScaler
 
 from backend.core.config import settings
 

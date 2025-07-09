@@ -1,6 +1,4 @@
 from fastapi import APIRouter, HTTPException
-from typing import List, Dict, Any
-
 from services.training_service import TrainingService
 
 router = APIRouter()
