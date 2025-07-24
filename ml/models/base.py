@@ -24,7 +24,7 @@ class BaseModel(ABC):
             BaseEstimator: The built model.
         """
         pass
-    
+
     def train(
         self,
         X: np.ndarray,

@@ -27,6 +27,7 @@ services:
       - ./ml:/app/ml
       - ./data:/app/data
       - ./services:/app/services
+      - ./mlruns:/app/mlruns
     environment:
       - MLFLOW_TRACKING_URI=http://mlflow:5000
 
@@ -38,4 +39,4 @@ services:
     ports:
       - "5000:5000"
     volumes:
-      - ./mlruns:/app/mlruns
+      - ./mlruns:/mlflow

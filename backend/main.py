@@ -10,7 +10,7 @@ from datetime import datetime
 backend_dir = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, backend_dir)
 
-from backend.api.routes import datasets, models, noise, training, results
+from backend.api.routes import datasets, models, noise, training, results, visualizations
 from core.config import settings
 
 # Initialize FastAPI app
@@ -35,6 +35,7 @@ app.include_router(models.router, prefix="/models", tags=["models"])
 app.include_router(noise.router, prefix="/noise", tags=["noise"])
 app.include_router(training.router, prefix="/training", tags=["training"])
 app.include_router(results.router, prefix="/experiments", tags=["experiments"])
+app.include_router(visualizations.router, prefix="/api", tags=["visualizations"])
 
 
 # System statistics endpoint
